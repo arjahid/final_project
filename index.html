@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn the Universe</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header>
+        <h1>Learn the Universe</h1>
+    </header>
+    
+    <!-- Registration and Login Section -->
+    <section  id="auth">
+        <img src="img.jpeg" alt="error" width="800" height="200" id="img">
+        <h2>Register or Log In</h2>
+        <form action="/post" method="post" auth="authForm">
+            <input type="email" id="email" name="email" placeholder="Email" required>
+            <input type="password" id="password" name="password" placeholder="Password" required>
+            <input type="text" id="accountNumber" placeholder="Account Number" name="accountNumber" required>
+            <button type="button" onclick="registerUser()">Register</button>
+            <button type="button" onclick="loginUser()">Log In</button>
+            
+        </form>
+    </section>
+   
+
+
+    <!-- Main Content Section-->
+     
+    <section id="mainContent">
+        <h2>What do you want to know about?</h2>
+       
+       
+        <button id="planet" onclick="showContent('planets')">Planets</button>
+        <button id="stars" onclick="showContent('stars')">Stars/Stellar</button>
+        <button id="solar" onclick="showContent('solarSystem')">Solar System</button>
+        <button id="galaxy" onclick="showContent('galaxy')">Galaxy</button>
+        <button id="blackhole" onclick="showContent('blackhole')">Black Hole</button>
+      
+       
+        
+        <div id="searchDictionary">
+            <h3>Search Dictionary</h3>
+            <input type="text" id="searchInput" placeholder="Search...">
+            <button onclick="searchDictionary()">Search</button>
+        </div>
+
+        <div id="contactTeacher">
+            <h3>Contact a Teacher</h3>
+            <button onclick="payForConsulting()">Pay for Consulting</button>
+        </div>
+
+        <div id="joinTeacher">
+            <h3>Join as a Teacher</h3>
+            <p id="teacher" >Requirements: BSc in Physics/Astronomy, MSc in Astronomy</p>
+            <button onclick="applyAsTeacher()">Apply</button>
+        </div>
+
+        <button onclick="deleteAccount()">Delete Account</button>
+        <div>
+            
+        </div>
+      
+    </section>
+  
+    
+
+    <script src="script.js"></script>
+    <script src="server.js"></script>
+</body>
+</html>

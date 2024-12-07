@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #05051d;
+    color: #01090c;
+    image-resolution: high;
+}
+
+header {
+    background-color: #201e25;
+    color: #4d6ed1;
+    padding: 10px 0;
+    text-align: center;
+    
+    
+}
+
+section {
+    margin: 20px auto;
+    width: 70%;
+    max-width: 500px;
+    text-align: center;
+    background-color: #1a6ca7;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(11, 7, 212, 0.1);
+}
+section:hover{
+    background-color: #0784dd;
+    transform: scale(1.1); 
+    transition: transform 0.3s ease-in-out; 
+    box-shadow: 30px 14px 18px rgba(233, 3, 221, 0.3); 
+}
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80%;
+    height: auto;
+    
+  }
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #12254b;
+    color: #dfe4e7;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #258579;
+    color: #05051d;
+}
+
+input[type="email"], input[type="password"], input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#mainContent{
+    display: none;
+}
+#img{
+    
+        width: 100%; 
+        max-width: 500px;
+        height: auto; 
+        border-radius: 10px; 
+        border: 3px solid #eba5a5; 
+        
+        margin: 20px; 
+        display: block; 
+        margin-left: auto;
+        margin-right: auto; 
+        cursor: pointer;
+    
+}
+#img:hover{
+    transform: scale(1.1); 
+    transition: transform 0.3s ease-in-out; 
+    box-shadow: 10px 4px 8px rgba(7, 228, 55, 0.3); 
+    
+}
+#img2{
+    width: 100%; 
+    max-width: 500px; 
+   
+}
+#planet{
+    color: rgb(238, 225, 225);
+    font-size: larger;
+    cursor: pointer;
+    
+    
+}
+#stars{
+    color: rgb(223, 217, 217);
+    font-size: larger;
+    
+  
+    cursor: pointer;
+    
+}
+#solar{
+    color: rgb(223, 217, 217);
+    font-size: larger;
+  
+    cursor: pointer;
+    
+}
+#galaxy{
+    color: rgb(223, 217, 217);
+    font-size: larger;
+    cursor: pointer;
+    
+}
+#blackhole{
+    color: rgb(223, 217, 217);
+    font-size: larger;
+    cursor: pointer;
+    
+}
+#teacher{
+    color: rgb(14, 1, 1);
+    font-size: larger;
+    font-weight: bold;
+}
+#teacher:hover{
+    color: rgb(8, 8, 8);
+    font-size: larger;
+    font-weight: bold;
+    background-color: rgb(208, 233, 118);
+   border-radius: 10px;
+    box-shadow: 10px 7px 8px rgba(7, 228, 55, 0.3); 
+    transform: scale(1.1); 
+    transition: transform 0.3s ease-in-out; 
+}
+
+
+@media (max-width: 768px) {
+    #auth input[type="email"],
+    #auth input[type="password"],
+    #auth input[type="text"] {
+        width: 100%;
+    }
+
+    #auth button {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    #mainContent {
+        padding: 15px;
+    }
+}
+
+
+@media (max-width: 576px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    #auth img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+
+body {
+    background: url('galaxy-cosmic-3840x2160-14974.jpg') no-repeat center center fixed ; /* Replace 'img.jpeg' with the image path */
+    background-size: cover; /* Ensures the image scales to cover the screen */
+    opacity: 0.9;
+    filter: blur(1);
+     /* Adjust transparency of the background image */
+    
+} 
